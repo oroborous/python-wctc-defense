@@ -125,7 +125,6 @@ class GameLayer(cocos.layer.Layer):
         enemy_start = self.scenario.enemy_start
         # apply a little random variance +/-10 in the x and y
         # so that all enemies don't start in exactly the same place
-        # + random.uniform(-10, 10)
         x = enemy_start[0] + random.uniform(-10, 10)
         y = enemy_start[1] + random.uniform(-10, 10)
         self.add(actors.Enemy(x, y, self.scenario.enemy_actions))

@@ -104,7 +104,7 @@ class Shoot(cocos.sprite.Sprite):
 
 
 # only needs a cshape to detect being clicked on
-class TurretSlot(object):
+class TurretSlot:
     def __init__(self, pos, side):
         # use positional expansion operator ("splat") to unpack x, y from pos
         self.cshape = cm.AARectShape(eu.Vector2(*pos), side * 0.5, side * 0.5)
