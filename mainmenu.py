@@ -19,8 +19,8 @@ class MainMenu(cocos.menu.Menu):
         self.font_item['font_name'] = 'Oswald'
         self.font_item_selected['font_name'] = 'Oswald'
 
-        # easier to center menu items in window if their
-        # anchor points are also in their centers
+        # easier to center menu items in window if menu's
+        # anchor points are also in its centers
         self.menu_anchor_y = 'center'
         self.menu_anchor_x = 'center'
 

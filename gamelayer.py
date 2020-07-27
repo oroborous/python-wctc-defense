@@ -1,5 +1,6 @@
 import cocos.scene
-from scenario import get_scenario
+from scenario import get_scenario_1
+from scenario import get_scenario_2
 
 import cocos.layer
 import cocos.text
@@ -14,7 +15,7 @@ import mainmenu
 
 # called by main menu when game is started
 def new_game():
-    scenario = get_scenario()
+    scenario = get_scenario_2()
     background = scenario.get_background()
     hud = HUD()
     game_layer = GameLayer(hud, scenario)
@@ -74,8 +75,9 @@ class GameLayer(cocos.layer.Layer):
         super(GameLayer, self).__init__()
         self.hud = hud
         self.scenario = scenario
-        self._score = 0
-        self._points = 40
+        # use setters (defined below) to initialize text labels
+        self.score = self._score = 0
+        self.points = self._points = 40
         self.turrets = []
 
         w, h = director.get_window_size()

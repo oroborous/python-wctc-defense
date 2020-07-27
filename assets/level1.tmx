@@ -3,7 +3,7 @@
  <tileset firstgid="1" name="desert" tilewidth="32" tileheight="32" tilecount="48" columns="8">
   <image source="desert.png" width="256" height="192"/>
  </tileset>
- <layer id="1" name="level1" width="20" height="15">
+ <layer id="1" name="map1" width="20" height="15">
   <data encoding="base64" compression="zlib">
    eJyt1GELgjAQBuCFYH0yJSgr0FmUqFj+/1/XK51wHNuhbB8exO14B7tjlTHmDdUGZ7hACZbWJvpe4RbBnfIaeETwpLwO+gAvkbfYQbLi7r6itvHkFXBi/1Y5h9f68rhaOUdy5U1KvebjyAudk1HkxZgVnhcyK9xAeQelj6750GZs7kPu6WOr9Ngqvc/Z/hbyDUlhb/5vhKxd9ua7qFfmZ3CEHzLIIv0=
   </data>
