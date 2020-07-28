@@ -70,3 +70,15 @@ def get_scenario_2():
                         RIGHT, move(0, 160), RIGHT, move(512, 0), RIGHT, move(0, -352), RIGHT,
                         move(-128, 0), LEFT, move(0, -64)]
     return sc
+
+
+def get_scenario_3():
+    turret_slots = [(288, 288), (128, 192), (384, 128), (544, 192)]
+    bunker_position = (592, 112)
+    enemy_start = (-80, 112)
+    sc = Scenario('level3', 'map1', turret_slots, bunker_position, enemy_start)
+    sc.enemy_actions = [
+        RIGHT, move(192 + 16 + 80, 0), LEFT, move(0, 256), RIGHT, move(256, 0), RIGHT,
+        move(0, -256), LEFT, move(160, 0)
+    ]
+    return sc

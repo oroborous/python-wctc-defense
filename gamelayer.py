@@ -1,6 +1,7 @@
 import cocos.scene
 from scenario import get_scenario_1
 from scenario import get_scenario_2
+from scenario import get_scenario_3
 
 import cocos.layer
 import cocos.text
@@ -15,7 +16,7 @@ import mainmenu
 
 # called by main menu when game is started
 def new_game():
-    scenario = get_scenario_2()
+    scenario = get_scenario_3()
     background = scenario.get_background()
     hud = HUD()
     game_layer = GameLayer(hud, scenario)
