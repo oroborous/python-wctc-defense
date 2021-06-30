@@ -5,6 +5,8 @@ RIGHT = ac.RotateBy(90, 1)
 LEFT = ac.RotateBy(-90, 1)
 
 
+
+
 # convenience function to create MoveBy actions
 # that will move a sprite at 100 pixels/second
 def move(x, y):

@@ -138,7 +138,7 @@ class Turret(Actor):
             # calculate vector between Turret and target
             target_path = eu.Vector2(self.target.x - self.x,
                                      self.target.y - self.y)
-            # normalize vector (get magnitude of 1), multiple by 20
+            # normalize vector (get magnitude of 1), multiply by 20
             # (length of turret barrels), and add to turret's center
             pos = self.cshape.center + target_path.normalized() * 20
             # create a new Shoot and add to the scene
